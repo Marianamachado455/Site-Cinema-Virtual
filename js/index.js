@@ -46,7 +46,7 @@ document.addEventListener('click', function(event) {
         if (card) {
             const filmeId = card.dataset.filmeId;
             console.log(`Poster clicado para o filme ID: ${filmeId}`);
-            window.location.href = "placeholder.html";
+            window.location.href = `compra.html?filmeId=${filmeId}`;
         }
     }
 });
