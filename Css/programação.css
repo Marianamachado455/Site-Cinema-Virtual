@@ -137,6 +137,44 @@ body {
   background: linear-gradient(135deg, #1a0da8, #090266);
 }
 
+#footer {
+  display: flex;
+  gap: 150px; 
+  padding: 30px 80px;
+  border-top: 2px solid #5c5b61;
+  background-color: #0d1147;;
+  height: 160px;
+}
+
+.footer_coluna {
+  display: flex;
+  flex-direction: column;
+  gap:14px
+}
+
+.footer_titulo {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.footer_txt {
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  margin: 0;
+  color: white;
+  text-decoration: none;
+}
+
+.footer_txt:link,
+.footer_txt:visited,
+.footer_txt:hover,
+.footer_txt:active {
+  color: white;
+}
+
 /* ===== Responsividade ===== */
 @media (max-width: 900px) {
   .filme-wrapper {
