@@ -91,6 +91,7 @@ body {
     background-color: #ffd44f;
 }
 /* ===== Container do filme ===== */
+
 .filme-wrapper {
   display: flex;
   flex-direction: row;
@@ -105,6 +106,7 @@ body {
 }
 
 /* ===== Pôster ===== */
+
 .img-container {
   width: 17%;
   position: relative;
@@ -130,6 +132,7 @@ body {
 }
 
 /* ===== Horários ===== */
+
 .horarios-container {
   width: 80%;
 }
@@ -147,6 +150,7 @@ body {
 }
 
 /* ===== Sinopse ===== */
+
 .sinopse {
   margin-top: 2%;
   padding: 2%;
@@ -165,6 +169,7 @@ body {
 }
 
 /* ===== Faixa azul dos horários ===== */
+
 #container_card {
   display: flex;
   flex-wrap: wrap;
@@ -178,7 +183,7 @@ body {
   align-items: center;      
 }
 
-/* Caixinhas individuais */
+/* Caixinhas individuais com Horários */
 .opcoes_genero {
   border-radius: 10%;
   background: linear-gradient(135deg, #090266, #1a0da8);
@@ -198,6 +203,8 @@ body {
   transform: scale(1.08);
   background: linear-gradient(135deg, #1a0da8, #090266);
 }
+
+/* ===== Footer ===== */
 
 #footer {
   display: flex;
@@ -228,6 +235,14 @@ body {
   margin: 0;
   color: white;
   text-decoration: none;
+}
+
+.footer-content {
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .footer_txt:link,
