@@ -7,27 +7,89 @@ body {
 }
 
 /* ===== Cabeçalho ===== */
-#banner {
+/* --- Estrutura Principal da Navbar --- */
+#navbar {
     display: flex;
-    gap: 1.5%; 
-    align-items: center; 
-    padding: 0.8% 2%;
-    border-bottom: 0.2% solid #ccc;
-    background-color: blue;
+    align-items: center;
+    background-color: #1a0dab; 
+    padding: 10px 30px;
+    border-bottom: 1px solid #3d2ce0;
 }
 
-#banner_img {
-    width: 5%;
-    height: auto;
+.nav-center {
+    flex-grow: 1; 
 }
 
-#banner_h1 {
+/* --- Bloco da Esquerda (Logo e Título) --- */
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+    text-decoration: none; 
+}
+
+.nav-logo {
+    width: 50px; 
+    height: 50px;
+}
+
+.nav-title {
     font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
+    font-size: 28px;
     font-weight: bold;
+    color: white;
     margin: 0;
 }
 
+/* --- Links de Navegação (Centro) --- */
+.nav-center ul {
+    display: flex;
+    justify-content: center; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+.nav-center a {
+    text-decoration: none;
+    color: #d1d1ff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 5px 0;
+    transition: color 0.3s;
+}
+
+.nav-center a:hover {
+    color: white;
+}
+
+/* --- Bloco da Direita (Ações) --- */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-action-icon {
+    color: white;
+}
+
+.btn-entrar {
+    background-color: #FFC107; 
+    color: #1a1a1a; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.btn-entrar:hover {
+    background-color: #ffd44f;
+}
 /* ===== Container do filme ===== */
 .filme-wrapper {
   display: flex;
