@@ -51,9 +51,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Função para pegar o ID do filme da URL
   function getFilmeIdFromURL() {
-    const params = new URLSearchParams(window.location.search);
-    return params.get('filmeId');
-  }
+  const params = new URLSearchParams(window.location.search);
+  return params.get('filmeId');
+}
+
 
   // Carrega as informações do filme na página
   function carregarDadosDoFilme(filmeId) {
@@ -129,10 +130,14 @@ document.addEventListener('DOMContentLoaded', function() {
       alert('Selecione ao menos 1 assento.');
       return;
     }
+
+      const total = assentosSelecionados.size * VALOR_UNITARIO;
+    localStorage.setItem('totalIngressos', total.toFixed(2));
+
     
-    alert('Compra confirmada! (simulação)');
+    alert('Compra confirmada!');
     // Corrigido para o nome correto do seu arquivo principal
-    window.location.href = 'CinemaVirtualCartaz.html'; 
+    window.location.href = 'pagamento.html'; 
   });
 
 
@@ -145,6 +150,6 @@ document.addEventListener('DOMContentLoaded', function() {
     gerarAssentos();
     atualizarResumo();
   } else {
-    document.body.innerHTML = '<h1>Erro: Nenhum filme selecionado. <a href="CinemaVirtualCartaz.html">Voltar para a bilheteria.</a></h1>';
+    document.body.innerHTML = '<h1>Erro: Nenhum filme selecionado. <a href="index.html">Voltar para a bilheteria.</a></h1>';
   }
 });
