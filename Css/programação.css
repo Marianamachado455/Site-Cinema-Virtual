@@ -90,7 +90,55 @@ body {
 .btn-entrar:hover {
     background-color: #ffd44f;
 }
+
+/* ===== Header ===== */
+
+/* Título acima do quadrado de horários */
+.titulo-horarios {
+  color: #ffd700;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2%;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  margin-left: 3%;
+}
+
+/* Seleção de Data */
+.selecao-data {
+
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  border: 1px solid #555;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #090266, #1a0da8);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.35);
+  width: 6%;
+  margin-left: 3%;
+}
+
+.selecao-data option {
+  background-color: #0d0f27; 
+  font-weight: 500;
+  color: white;
+}
+
 /* ===== Container do filme ===== */
+
+.img-container img {
+    width: 200px;        /* largura fixa */
+    height: 300px;       /* altura fixa */
+    object-fit: cover;   /* mantém a imagem cortando o excesso proporcionalmente */
+    border-radius: 8px;  /* opcional, arredonda os cantos */
+    display: block;
+    margin: 0 auto;      /* centraliza horizontalmente */
+}
+
 
 .filme-wrapper {
   display: flex;
@@ -108,7 +156,8 @@ body {
 /* ===== Pôster ===== */
 
 .img-container {
-  width: 17%;
+  text-align: center;     /* centraliza a imagem e o título do filme */
+  margin-bottom: 1rem;    /* espaço entre poster e horários */
   position: relative;
 }
 
@@ -137,17 +186,6 @@ body {
   width: 80%;
 }
 
-/* Título acima do quadrado de horários */
-.titulo-horarios {
-  color: #ffd700;
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.5rem;
-  font-weight: 600;
-  margin-bottom: 2%;
-  text-transform: uppercase;
-  letter-spacing: 0.05rem;
-  margin-left: 3%;
-}
 
 /* ===== Sinopse ===== */
 
@@ -155,7 +193,7 @@ body {
   margin-top: 2%;
   padding: 2%;
   background-color: #25294a;
-  border-radius: 2%;
+  border-radius: 3%;
   box-shadow: 0 0.4% 1% rgba(0,0,0,0.35);
 }
 
@@ -185,7 +223,7 @@ body {
 
 /* Caixinhas individuais com Horários */
 .opcoes_genero {
-  border-radius: 10%;
+  border-radius: 15%;
   background: linear-gradient(135deg, #090266, #1a0da8);
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
@@ -197,6 +235,7 @@ body {
   text-align: center;
   min-width: 8%;
   box-shadow: 0 0.2% 0.6% rgba(0,0,0,0.35);
+  text-decoration: none; 
 }
 
 .opcoes_genero:hover {

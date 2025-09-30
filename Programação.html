@@ -2,110 +2,50 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <title> Cinema CineTerj - Programação </title>
+    <title>Cinema CineTerj - Programação</title>
     <link href="Css/programação.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Cabeçalho -->
-   <header>
+    <header>
         <div id="navbar">
-
-    <a href="index.html" class="nav-left">
-        <img src="Imagens/logo.png" alt="Icone" class="nav-logo">
-        <h1 class="nav-title">Cinema CineTerj</h1>
-    </a>
-
-    <nav class="nav-center">
-        <ul>
-            <li><a href="index.html">FILMES</a></li>
-            <li><a href="Programação.html">PROGRAMAÇÃO</a></li>
-
-
-        </ul>
-    </nav>
-
-    <div class="nav-right">
-        <a href="#" class="nav-action-icon">
+            <a href="index.html" class="nav-left">
+                <img src="Imagens/logo.png" alt="Icone" class="nav-logo">
+                <h1 class="nav-title">Cinema CineTerj</h1>
             </a>
-        <a href="#" class="btn-entrar">Entrar</a>
-        <a href="#" class="nav-action-icon">
-            </a>
-    </div>
 
-</div>
+            <nav class="nav-center">
+                <ul>
+                    <li><a href="index.html">FILMES</a></li>
+                    <li><a href="Programação.html">PROGRAMAÇÃO</a></li>
+                </ul>
+            </nav>
 
+            <div class="nav-right">
+                <a href="#" class="btn-entrar">Entrar</a>
+            </div>
+        </div>
     </header>
 
     <!-- Conteúdo principal -->
-
     <h2 class="titulo-horarios">Programação</h2>
 
-    <!-- Filme 1: Wicked -->
-    <div class="filme-wrapper">
-        <div class="img-container">
-                <img id="img_principal" src="Imagens/wicked-poster.jpeg" alt="Poster do filme">
-                <div id="txt_img_principal">Wicked</div>
-            </div>
-            <div class="horarios-container">
-                <div id="container_card">
-                    <a class="opcoes_genero" href="compra.html?filmeId=17">14:00</a>
-                    <a class="opcoes_genero" href="compra.html?filmeId=17">16:30</a>
-                    <a class="opcoes_genero" href="compra.html?filmeId=17">19:00</a>
-                    <a class="opcoes_genero" href="compra.html?filmeId=17">21:30</a>
-                </div>
-                <div class="sinopse">
-         <p>
-            Em uma terra mágica, duas jovens bruxas, Elphaba e Glinda, formam uma amizade improvável enquanto enfrentam desafios, descobrem segredos e lutam contra o destino que as separa. "Wicked" é uma história encantadora sobre coragem, amor e a verdadeira natureza do bem e do mal.
-        </p>
-    </div>
-                
+    <div class="selecao-data-wrapper">
+        <div class="selecao-data">
+            <label for="selectData">Data</label>
+            <select id="selectData">
+                <option value="28" selected>28/09</option>
+                <option value="29">29/09</option>
+                <option value="30">30/09</option>
+            </select>
         </div>
     </div>
 
-    <!-- Filme 2: Avatar -->
-    <div class="filme-wrapper">
-        <div class="img-container">
-            <img id="img_principal" src="Imagens/poster5.jpeg" alt="Poster do filme">
-            <div id="txt_img_principal">Avatar</div>
-        </div>
-        <div class="horarios-container">
-            <div id="container_card">
-                <a class="opcoes_genero" href="compra.html?filmeId=19">13:00</a>
-                <a class="opcoes_genero" href="compra.html?filmeId=19">15:30</a>
-                <a class="opcoes_genero" href="compra.html?filmeId=19">18:00</a>
-                <a class="opcoes_genero" href="compra.html?filmeId=19">20:30</a>
-            </div>
-            <div class="sinopse">
-         <p>
-            Em um futuro distante, Jake Sully, um ex-fuzileiro paraplégico, é enviado ao planeta Pandora para participar de um programa que permite aos humanos controlar avatares, corpos híbridos de humanos e nativos Na'vi. Conforme Jake se integra à cultura Na'vi, ele se vê dividido entre sua lealdade aos humanos e sua crescente conexão com os habitantes de Pandora. "Avatar" é uma épica aventura de ficção científica que explora temas de ecologia, colonialismo e identidade.
-        </p>
-    </div>
-        </div>
-    </div>
+    <!-- Container onde os filmes serão gerados dinamicamente -->
+    <div id="filmes-container"></div>
 
-    <!-- Filme 3: Superman -->
-     <div class="filme-wrapper">
-        <div class="img-container">
-            <img id="img_principal" src="Imagens/poster4.jpg" alt="Poster do filme">
-            <div id="txt_img_principal">Superman</div>
-        </div>
-        <div class="horarios-container">
-            <div id="container_card">
-                <a class="opcoes_genero" href="compra.html?filmeId=2">12:30</a>
-                <a class="opcoes_genero" href="compra.html?filmeId=2">15:00</a>
-                <a class="opcoes_genero" href="compra.html?filmeId=2">17:30</a>
-                <a class="opcoes_genero" href="compra.html?filmeId=2">20:00</a>
-            </div>
-            <div class="sinopse">
-         <p>
-            Clark Kent, um jovem jornalista com habilidades sobre-humanas, descobre suas origens alienígenas e assume a identidade de Superman para proteger a Terra de ameaças. Com sua força incrível, visão de raio-x e capacidade de voar, ele luta contra vilões poderosos enquanto tenta manter sua vida secreta. "Superman" é uma história clássica de heroísmo, justiça e sacrifício.
-        </p>
-    </div>
-        </div>
-    </div>
-
-     <!-- Footer -->
+    <!-- Footer -->
     <footer id="footer">
         <div class="footer_coluna">
             <h3 class="footer_titulo">Menu</h3>
@@ -124,5 +64,7 @@
         </div>
     </footer>
 
+    <!-- Link para o JavaScript -->
+    <script src="js/programação.js"></script>
 </body>
 </html>
